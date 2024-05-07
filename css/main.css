@@ -1,0 +1,317 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+main {
+  min-height: 100vh;
+}
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+a {
+  text-decoration: none;
+}
+/* Start Component */
+.special-heading {
+  text-align: center;
+  max-width: 580px;
+  margin: auto;
+}
+.special-heading h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+}
+.special-heading p {
+  margin: 15px 0 0;
+  color: var(--grayish-blue);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+/* End Component */
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .container {
+  text-align: center;
+}
+.header img {
+  width: 84px;
+  height: 84px;
+}
+.header .text {
+  max-width: 510px;
+  margin: 25px auto;
+}
+.header .text h1 {
+  margin: 0;
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+}
+.header .text p {
+  margin: 15px 0 0;
+  color: var(--grayish-blue);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.header .download {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.header .download a {
+  display: block;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.header .download a:first-child {
+  background-color: var(--strong-cyan);
+  box-shadow: 0 3px 10px 0px hsl(171deg 66% 44% / 50%);
+  border-bottom: 2px solid hsl(171deg 48.19% 41.04%);
+}
+.header .download a:first-child:hover {
+  background-color: hsl(171deg 66% 44% / 70%);
+}
+.header .download a:last-child {
+  background-color: var(--light-blue);
+  border-bottom: 2px solid hsl(233 48% 52% / 1);
+  box-shadow: 0 3px 10px hsl(233deg 100% 69% / 50%);
+}
+.header .download a:last-child:hover {
+  background-color: hsl(233deg 100% 69% / 70%);
+}
+@media (max-width: 767px) {
+  .header .download {
+    flex-direction: column;
+  }
+}
+.clipboard-info {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.clipboard-info .content {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+.clipboard-info .content .image {
+  text-align: center;
+}
+.clipboard-info .content .image img {
+  max-width: 100%;
+  position: relative;
+  left: -50px;
+}
+.clipboard-info .content .info {
+  margin-top: 40px;
+}
+.clipboard-info .content .info > div:not(:last-child) {
+  margin-bottom: 50px;
+}
+.clipboard-info .content .info h4 {
+  margin: 0;
+  color: var(--dark-grayish-blue);
+  font-size: 1.2rem;
+}
+.clipboard-info .content .info p {
+  margin: 10px 0 0;
+  color: var(--grayish-blue);
+}
+@media (max-width: 767px) {
+  .clipboard-info .content {
+    flex-direction: column;
+  }
+  .clipboard-info .content .image img {
+    left: 0;
+  }
+  .clipboard-info .content .info > div {
+    text-align: center;
+  }
+}
+.clipboard-access {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.clipboard-access .image {
+  text-align: center;
+  margin-top: 60px;
+}
+.clipboard-access .image img {
+  max-width: 100%;
+}
+.clipboard-tools {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.clipboard-tools .tools {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .clipboard-tools .tools {
+    flex-direction: column;
+  }
+}
+.clipboard-tools .tools > div {
+  text-align: center;
+  max-width: 320px;
+}
+.clipboard-tools .tools .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+}
+.clipboard-tools .tools .image img {
+  max-width: 100%;
+}
+.clipboard-tools .tools h4 {
+  margin: 20px 0;
+  color: var(--dark-grayish-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.clipboard-tools .tools p {
+  color: var(--grayish-blue);
+  line-height: 1.6;
+  font-size: .9rem;
+}
+.brands {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+@media (max-width: 767px) {
+  .brands {
+    flex-direction: column;
+  }
+}
+.clipboard-download {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.clipboard-download .download {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+.clipboard-download .download a {
+  display: block;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  text-align: center;
+}
+.clipboard-download .download a:first-child {
+  background-color: var(--strong-cyan);
+  box-shadow: 0 3px 10px 0px hsl(171deg 66% 44% / 50%);
+  border-bottom: 2px solid hsl(171deg 48.19% 41.04%);
+}
+.clipboard-download .download a:first-child:hover {
+  background-color: hsl(171deg 66% 44% / 70%);
+}
+.clipboard-download .download a:last-child {
+  background-color: var(--light-blue);
+  border-bottom: 2px solid hsl(233 48% 52% / 1);
+  box-shadow: 0 3px 10px hsl(233deg 100% 69% / 50%);
+}
+.clipboard-download .download a:last-child:hover {
+  background-color: hsl(233deg 100% 69% / 70%);
+}
+@media (max-width: 767px) {
+  .clipboard-download .download {
+    flex-direction: column;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: hsl(201deg 11% 66% / 10%);
+}
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    gap: 40px ;
+  }
+}
+footer .image {
+  width: 48px;
+  height: 48px;
+}
+footer .image img {
+  max-width: 100%;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  footer ul li a {
+    margin: auto;
+  }
+}
+footer ul li {
+  padding: 10px;
+}
+footer ul li a {
+  display: block;
+  width: fit-content;
+  color: var(--dark-grayish-blue);
+  transition: 0.3s;
+}
+footer ul li a:hover {
+  color: var(--strong-cyan);
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer .social a {
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social a img {
+  max-width: 100%;
+}
+footer .social a:hover {
+  color: var(--strong-cyan);
+}
+@media (min-width: 768px) {
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+  }
+}
